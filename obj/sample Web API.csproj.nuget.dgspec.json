@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Codebase\\PracticeCOde\\practice-code\\sample Web API.csproj": {}
+  },
+  "projects": {
+    "C:\\Codebase\\PracticeCOde\\practice-code\\sample Web API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Codebase\\PracticeCOde\\practice-code\\sample Web API.csproj",
+        "projectName": "sample Web API",
+        "projectPath": "C:\\Codebase\\PracticeCOde\\practice-code\\sample Web API.csproj",
+        "packagesPath": "C:\\Users\\h299682\\.nuget\\packages\\",
+        "outputPath": "C:\\Codebase\\PracticeCOde\\practice-code\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\h299682\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Codebase\\SET_ASSET_INSTALLATION_LOCATION\\src\\Nuget": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://packagesource": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://artifactory-na.honeywell.com/artifactory/api/nuget/Connected_Services_OBS-8431-stable-nuget-local/": {},
+          "https://artifactory-na.honeywell.com/artifactory/api/nuget/Honeywell.CBP.IOT.API-8588-stable-nuget-local": {},
+          "https://artifactory-na.honeywell.com/artifactory/api/nuget/allegrettoclouddatastore-6990-stable-nuget-local": {},
+          "https://artifactory-na.honeywell.com/artifactory/api/nuget/allegrettocommon-6990-stable-nuget-local": {},
+          "https://artifactory-na.honeywell.com/artifactory/api/nuget/hcecbp-nuget-stable-local": {},
+          "https://artifactory-na.honeywell.com/artifactory/api/nuget/hcecbp-nuget-unstable-local": {},
+          "https://artifactory-na.honeywell.com/artifactory/api/nuget/honeywell-eom-deploy-nuget-stable-local": {},
+          "https://artifactory-na.honeywell.com/artifactory/api/nuget/sentienceiotcore-7205--stable-nuget-local": {},
+          "https://artifactory-na.honeywell.com/artifactory/api/nuget/sentienceiotcore-7205--unstable-nuget-local": {},
+          "https://artifactory.honeywell.com/artifactory/api/nuget/ConnectedBuildingsPlatform-Code": {},
+          "https://artifactory.honeywell.com/artifactory/api/nuget/ConnectedBuildingsPlatform-Code-Unstable": {},
+          "https://artifactory.honeywell.com/artifactory/api/nuget/HBT-NGS-NUGET-CODE": {},
+          "https://artifactory.honeywell.com/artifactory/api/nuget/Sentience-Code-Unstable": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

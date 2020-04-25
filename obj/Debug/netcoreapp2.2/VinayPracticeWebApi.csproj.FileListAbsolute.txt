@@ -1,0 +1,15 @@
+C:\Codebase\PracticeCOde\practice-code\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Codebase\PracticeCOde\practice-code\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Codebase\PracticeCOde\practice-code\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Codebase\PracticeCOde\practice-code\bin\Debug\netcoreapp2.2\VinayPracticeWebApi.deps.json
+C:\Codebase\PracticeCOde\practice-code\bin\Debug\netcoreapp2.2\VinayPracticeWebApi.runtimeconfig.json
+C:\Codebase\PracticeCOde\practice-code\bin\Debug\netcoreapp2.2\VinayPracticeWebApi.runtimeconfig.dev.json
+C:\Codebase\PracticeCOde\practice-code\bin\Debug\netcoreapp2.2\VinayPracticeWebApi.dll
+C:\Codebase\PracticeCOde\practice-code\bin\Debug\netcoreapp2.2\VinayPracticeWebApi.pdb
+C:\Codebase\PracticeCOde\practice-code\obj\Debug\netcoreapp2.2\VinayPracticeWebApi.RazorAssemblyInfo.cache
+C:\Codebase\PracticeCOde\practice-code\obj\Debug\netcoreapp2.2\VinayPracticeWebApi.RazorAssemblyInfo.cs
+C:\Codebase\PracticeCOde\practice-code\obj\Debug\netcoreapp2.2\VinayPracticeWebApi.AssemblyInfoInputs.cache
+C:\Codebase\PracticeCOde\practice-code\obj\Debug\netcoreapp2.2\VinayPracticeWebApi.AssemblyInfo.cs
+C:\Codebase\PracticeCOde\practice-code\obj\Debug\netcoreapp2.2\VinayPracticeWebApi.RazorTargetAssemblyInfo.cache
+C:\Codebase\PracticeCOde\practice-code\obj\Debug\netcoreapp2.2\VinayPracticeWebApi.dll
+C:\Codebase\PracticeCOde\practice-code\obj\Debug\netcoreapp2.2\VinayPracticeWebApi.pdb
