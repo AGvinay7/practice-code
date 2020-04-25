@@ -6,26 +6,32 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace sample_Web_API.Controllers
 {
-    [Route("api/[controller]")]
+
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class MoviesController : ControllerBase
     {
-        // GET api/values
+        /// <summary>
+        /// API to get all movies
+        /// </summary>
+        /// <returns>200</returns>
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        [Route("api/movies")]
+        public IList<MovieModel> GetAllMovies()
         {
-            return new string[] { "value1", "value2" };
+            return new List<MovieModel>();
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        [HttpGet]
+        [Route("api/movies/{id}")]
+        public MovieModel GetMovieById(int id)
         {
-            return "value";
+            return new MovieModel();
         }
 
         // POST api/values
         [HttpPost]
+        [Route("api/movies/{id}")]
         public void Post([FromBody] string value)
         {
         }
