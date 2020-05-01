@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using sample_Web_API.AbstractFactory;
 using sample_Web_API.FactoryDesignPattern;
 
 namespace sample_Web_API.Controllers
@@ -16,8 +17,14 @@ namespace sample_Web_API.Controllers
         [Route("api/movies")]
         public IList<MovieModel> GetAllMovies()
         {
-            Client c = new Client();
-            c.GetMovies();
+            // creat objects using Factory Design Pattern
+            //var callerObj = new Client();
+           // callerObj.GetMovies();
+
+            // creat objects using Abstract Factory Design Pattern
+            var createTiger = new AnimalMaker();
+            createTiger.CreateAnimal();
+
             return new List<MovieModel>();
         }
 
