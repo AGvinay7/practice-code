@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using sample_Web_API.AbstractFactory;
 using sample_Web_API.FactoryDesignPattern;
+using sample_Web_API.Processors.Impl;
+using sample_Web_API.Processors.Interface;
 
 namespace sample_Web_API.Controllers
 {
@@ -9,22 +11,20 @@ namespace sample_Web_API.Controllers
     [ApiController]
     public class MoviesController : ControllerBase
     {
+        public readonly IDesignPatterns _designPatterns;
+        //public MoviesController(IDesignPatterns designPatterns)
+        //{
+        //    _designPatterns = designPatterns;
+        //}
         /// <summary>
         /// API to get all movies
         /// </summary>
         /// <returns>200</returns>
         [HttpGet]
         [Route("api/movies")]
-        public IList<MovieModel> GetAllMovies()
+        public IList<MovieModel> GetAllMovies([FromServices] IDesignPatterns _designPatterns)
         {
-            // creat objects using Factory Design Pattern
-            //var callerObj = new Client();
-           // callerObj.GetMovies();
-
-            // creat objects using Abstract Factory Design Pattern
-            var createTiger = new AnimalMaker();
-            createTiger.CreateAnimal();
-
+            _designPatterns.DemoDesignPatterns();
             return new List<MovieModel>();
         }
 
@@ -36,20 +36,20 @@ namespace sample_Web_API.Controllers
             return new MovieModel();
         }
 
-        // POST api/values
+        // POST api/movies
         [HttpPost]
         [Route("api/movies/{id}")]
-        public void Post([FromBody] string value)
+        public void CreateMovie([FromBody] string value)
         {
         }
 
-        // PUT api/values/5
+        // PUT api/movies/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/values/5
+        // DELETE api/movies/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

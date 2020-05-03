@@ -3,7 +3,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.OpenApi.Models;
+using sample_Web_API.AdapterDesignPattern.Impl;
+using sample_Web_API.AdapterDesignPattern.Interface;
+using sample_Web_API.Processors.Impl;
+using sample_Web_API.Processors.Interface;
+using sample_Web_API.SingleTon.Impl;
+using sample_Web_API.SingleTon.Interface;
 using Swashbuckle.AspNetCore.Swagger;
 
 
@@ -21,12 +28,22 @@ namespace sample_Web_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);          
+            /*suppose if you have two Classes who have implemented IDesignPatterns
+            then write two lines seperately like below
+             services.TryAddTransient<IDesignPatterns, DesignPatterns_A>();
+             services.TryAddTransient<IDesignPatterns, DesignPatterns_B>();
+             services.TryAddTransient<IDesignPatterns, DesignPatterns_C>();    */
+            services.TryAddTransient<IDesignPatterns, DesignPatterns>();
+            services.TryAddSingleton<ISingletonProcessor, SingletonProcessor>();
+            services.TryAddTransient<IAdapterDemo, AdapterClass>();
 
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);        
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Vinay's sample APIs", Version = "v1" });
-            });
+            });            
 
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
