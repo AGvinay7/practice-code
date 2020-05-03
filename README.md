@@ -6,5 +6,5 @@ Practice c# code related to OOPS, Design patterns and SOLID Desgin principles
  open VinayPracticeWebApi.sln file (choose to open with Visual studio 2017 / 2019  )
  build the solution 
  start  IIS Express 
- swagger/index.html loads SWagger UI for APIs
+ swagger/index.html loads Swagger UI for APIs
  start using APIs :)
