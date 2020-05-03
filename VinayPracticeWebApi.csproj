@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <RootNamespace>sample_Web_API</RootNamespace>
+    <RootNamespace>VinayAG</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

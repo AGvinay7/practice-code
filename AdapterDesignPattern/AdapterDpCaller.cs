@@ -1,7 +1,7 @@
-﻿using sample_Web_API.AdapterDesignPattern.Interface;
+﻿using VinayAG.AdapterDesignPattern.Interface;
 using System;
 
-namespace sample_Web_API.AdapterDesignPattern
+namespace VinayAG.AdapterDesignPattern
 {
     public class AdapterDpCaller
     {

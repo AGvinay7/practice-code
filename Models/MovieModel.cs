@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace sample_Web_API.Controllers
+namespace VinayAG.Controllers
 {
     public class MovieModel
     {

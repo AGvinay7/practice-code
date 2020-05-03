@@ -1,16 +1,16 @@
-﻿using sample_Web_API.AbstractFactory;
-using sample_Web_API.AdapterDesignPattern;
-using sample_Web_API.AdapterDesignPattern.Interface;
-using sample_Web_API.FactoryDesignPattern;
-using sample_Web_API.Processors.Interface;
-using sample_Web_API.SingleTon;
-using sample_Web_API.SingleTon.Interface;
+﻿using VinayAG.AbstractFactory;
+using VinayAG.AdapterDesignPattern;
+using VinayAG.AdapterDesignPattern.Interface;
+using VinayAG.FactoryDesignPattern;
+using VinayAG.Processors.Interface;
+using VinayAG.SingleTon;
+using VinayAG.SingleTon.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace sample_Web_API.Processors.Impl
+namespace VinayAG.Processors.Impl
 {
     public class DesignPatterns : IDesignPatterns
     {

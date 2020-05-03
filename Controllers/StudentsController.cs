@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 
-namespace sample_Web_API.Controllers
+namespace VinayAG.Controllers
 {
     
     [ApiController]

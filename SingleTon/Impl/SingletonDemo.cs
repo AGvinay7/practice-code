@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace sample_Web_API.SingleTon
+namespace VinayAG.SingleTon
 {
     public sealed class SingletonDemo
     {

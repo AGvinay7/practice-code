@@ -1,4 +1,4 @@
-﻿namespace sample_Web_API.FactoryDesignPattern
+﻿namespace VinayAG.FactoryDesignPattern
 {
     public class MoviesFactory
     {

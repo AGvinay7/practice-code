@@ -1,4 +1,4 @@
-﻿namespace sample_Web_API.AbstractFactory.Products
+﻿namespace VinayAG.AbstractFactory.Products
 {
     public interface IAnimal
     {

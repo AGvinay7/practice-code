@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using sample_Web_API.AbstractFactory;
-using sample_Web_API.FactoryDesignPattern;
-using sample_Web_API.Processors.Impl;
-using sample_Web_API.Processors.Interface;
+using VinayAG.AbstractFactory;
+using VinayAG.FactoryDesignPattern;
+using VinayAG.Processors.Impl;
+using VinayAG.Processors.Interface;
 
-namespace sample_Web_API.Controllers
+namespace VinayAG.Controllers
 {
 
     [ApiController]

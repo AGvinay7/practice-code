@@ -1,10 +1,10 @@
-﻿using sample_Web_API.SingleTon.Interface;
+﻿using VinayAG.SingleTon.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace sample_Web_API.SingleTon.Impl
+namespace VinayAG.SingleTon.Impl
 {
     public class SingletonProcessor : ISingletonProcessor
     {

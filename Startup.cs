@@ -5,16 +5,16 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.OpenApi.Models;
-using sample_Web_API.AdapterDesignPattern.Impl;
-using sample_Web_API.AdapterDesignPattern.Interface;
-using sample_Web_API.Processors.Impl;
-using sample_Web_API.Processors.Interface;
-using sample_Web_API.SingleTon.Impl;
-using sample_Web_API.SingleTon.Interface;
+using VinayAG.AdapterDesignPattern.Impl;
+using VinayAG.AdapterDesignPattern.Interface;
+using VinayAG.Processors.Impl;
+using VinayAG.Processors.Interface;
+using VinayAG.SingleTon.Impl;
+using VinayAG.SingleTon.Interface;
 using Swashbuckle.AspNetCore.Swagger;
 
 
-namespace sample_Web_API
+namespace VinayAG
 {
     public class Startup
     {

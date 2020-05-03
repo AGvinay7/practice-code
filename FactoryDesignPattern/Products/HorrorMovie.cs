@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace sample_Web_API.FactoryDesignPattern
+namespace VinayAG.FactoryDesignPattern
 {
     public class HorrorMovie : IMovies
     {

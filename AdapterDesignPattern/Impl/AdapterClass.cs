@@ -1,9 +1,9 @@
 ﻿
 
-using sample_Web_API.AdapterDesignPattern.Interface;
+using VinayAG.AdapterDesignPattern.Interface;
 using System;
 
-namespace sample_Web_API.AdapterDesignPattern.Impl
+namespace VinayAG.AdapterDesignPattern.Impl
 {
     public class AdapterClass : IAdapterDemo
     {

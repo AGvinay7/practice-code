@@ -1,5 +1,5 @@
 ﻿
-namespace sample_Web_API.AdapterDesignPattern.Impl
+namespace VinayAG.AdapterDesignPattern.Impl
 {
     public class Adaptee
     {

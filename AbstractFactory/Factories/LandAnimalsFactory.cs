@@ -1,6 +1,6 @@
-﻿using sample_Web_API.AbstractFactory.Products;
+﻿using VinayAG.AbstractFactory.Products;
 
-namespace sample_Web_API.AbstractFactory.Factories
+namespace VinayAG.AbstractFactory.Factories
 {
     public class LandAnimalsFactory : AbstractFactory
     {
