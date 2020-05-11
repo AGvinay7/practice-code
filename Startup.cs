@@ -12,7 +12,7 @@ using VinayAG.Processors.Interface;
 using VinayAG.SingleTon.Impl;
 using VinayAG.SingleTon.Interface;
 using Swashbuckle.AspNetCore.Swagger;
-
+using VinayAG.Decorator;
 
 namespace VinayAG
 {
@@ -36,6 +36,7 @@ namespace VinayAG
             services.TryAddTransient<IDesignPatterns, DesignPatterns>();
             services.TryAddSingleton<ISingletonProcessor, SingletonProcessor>();
             services.TryAddTransient<IAdapterDemo, AdapterClass>();
+            services.TryAddTransient<ICircle, DecoratorPat>();
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);        

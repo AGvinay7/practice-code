@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VinayAG.Facade;
 
 namespace VinayAG.Processors.Impl
 {
@@ -31,6 +32,7 @@ namespace VinayAG.Processors.Impl
             _singletonProcessor.DemoSingleton();
 
             AdapterDesignPattern();
+           
         }
 
         private void AdapterDesignPattern()
