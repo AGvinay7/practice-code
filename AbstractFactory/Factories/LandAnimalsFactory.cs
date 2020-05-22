@@ -6,16 +6,18 @@ namespace VinayAG.AbstractFactory.Factories
     {
         public override IAnimal CreateAnimals(string landAnimalType)
         {
-            IAnimal animal = null;
-            switch(landAnimalType)
+            if(!string.IsNullOrWhiteSpace(landAnimalType))
             {
-                case "cat": return new Cat();
-                case "tiger": return new Tiger();
-                default: break;
+                switch (landAnimalType)
+                {
+                    case "cat": return new Cat();
+                    case "tiger": return new Tiger();
+                    default: break;
+                }
             }
-            return animal;
+            
+            return null;
         }
-
        
     }
 }

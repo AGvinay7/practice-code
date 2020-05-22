@@ -1,5 +1,6 @@
 ﻿using VinayAG.AdapterDesignPattern.Interface;
 using System;
+using System.Diagnostics;
 
 namespace VinayAG.AdapterDesignPattern
 {
@@ -13,8 +14,11 @@ namespace VinayAG.AdapterDesignPattern
         }
         public void ExecuteAdapterPattern()
         {
-            int result = _adapaterDemo.CalculateArea(57, "circle");
-            Console.WriteLine("Area of circle is" + result);
+            Trace.WriteLine("\n\n Calculate Area of circle with radius 7");
+
+            int result = _adapaterDemo.CalculateArea(7, "circle");
+
+            Trace.WriteLine("\n\n Area of circle is " + result +"\n\n");
         }
     }
 

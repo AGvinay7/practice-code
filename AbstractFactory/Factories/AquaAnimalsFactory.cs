@@ -10,14 +10,16 @@ namespace VinayAG.AbstractFactory.Factories
     {
         public override IAnimal CreateAnimals(string AquaAnimalType)
         {
-            IAnimal animal = null;
-            switch (AquaAnimalType)
+            if (!string.IsNullOrWhiteSpace(AquaAnimalType))
             {
-                case "whale": return new Whale();
-                case "shark": return new Shark();
-                default: break;
+                switch (AquaAnimalType)
+                {
+                    case "whale": return new Whale();
+                    case "shark": return new Shark();
+                    default: break;
+                }
             }
-            return animal;
+            return null;
         }
     }
 }

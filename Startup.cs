@@ -13,6 +13,8 @@ using VinayAG.SingleTon.Impl;
 using VinayAG.SingleTon.Interface;
 using Swashbuckle.AspNetCore.Swagger;
 using VinayAG.Decorator;
+using VinayAG.Facade.Interface;
+using VinayAG.Facade;
 
 namespace VinayAG
 {
@@ -28,15 +30,31 @@ namespace VinayAG
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            /*suppose if you have two Classes who have implemented IDesignPatterns
+            /*suppose if you have more than one Class which have implemented IDesignPatterns
             then write two lines seperately like below
              services.TryAddTransient<IDesignPatterns, DesignPatterns_A>();
              services.TryAddTransient<IDesignPatterns, DesignPatterns_B>();
              services.TryAddTransient<IDesignPatterns, DesignPatterns_C>();    */
-            services.TryAddTransient<IDesignPatterns, DesignPatterns>();
+
+            services.TryAddScoped<IDesignPatterns, DesignPatterns>();
+
             services.TryAddSingleton<ISingletonProcessor, SingletonProcessor>();
+
             services.TryAddTransient<IAdapterDemo, AdapterClass>();
+
             services.TryAddTransient<ICircle, DecoratorPat>();
+
+            services.TryAddTransient<IRocket, Rocket>();
+
+            services.TryAddTransient<ISatellite, Satellite>();
+
+            services.TryAddTransient<IPropellents, Propellents>();
+
+            services.TryAddTransient<IFuel, Fuel>();
+
+            services.TryAddTransient<IEngine, Engine>();
+
+
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);        

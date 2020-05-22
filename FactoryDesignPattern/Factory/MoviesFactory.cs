@@ -4,17 +4,18 @@
     {
         public IMovies GetMyMovie(string typeOfMovie)
         {
-            IMovies movie = null;
-            switch (typeOfMovie)
+            if (!string.IsNullOrWhiteSpace(typeOfMovie))
             {
-                case "action": return new ActionMovie();
-                case "horror": return new HorrorMovie();
-                case "historic": return new HistoricMovie();
-                default: break;
-
+                switch (typeOfMovie)            // based on type create objects dynamically 
+                {
+                    case "action": return new ActionMovie();
+                    case "horror": return new HorrorMovie();
+                    case "historic": return new HistoricMovie();
+                    default: break;
+                }
             }
-            return movie;
 
+            return null;
         }
     }
 }

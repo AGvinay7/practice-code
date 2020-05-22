@@ -18,20 +18,20 @@ namespace VinayAG.SingleTon.Impl
         }
         private static void Task3()
         {
-            var obj3 = SingletonDemo.CreateInstance();
-            obj3.Display("Dept Object");
+            var Department = SingletonDemo.CreateInstance();
+            Department.Display("Dept Object consumes singleton instance");
         }
 
         private static void Task2()
         {
-            var obj2 = SingletonDemo.CreateInstance();
-            obj2.Display("Student Object");
+            var Student = SingletonDemo.CreateInstance();
+            Student.Display("Student Object consumes singleton instance");
         }
 
         private static void Task1()
         {
-            var obj1 = SingletonDemo.CreateInstance();
-            obj1.Display("Employee Object");
+            var Faculty = SingletonDemo.CreateInstance();
+            Faculty.Display("Employee Object consumes singleton instance");
         }
 
 

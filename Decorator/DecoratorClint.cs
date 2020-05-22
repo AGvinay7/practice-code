@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace VinayAG.Decorator
 {
-    public class Client
+    public class DecoratorClient
     {
         private readonly ICircle _circle;
-        public Client(ICircle circle)
+        public DecoratorClient(ICircle circle)
         {
             _circle = circle;
         }
@@ -16,6 +16,7 @@ namespace VinayAG.Decorator
         public void DemoDecorator()
         {
             _circle.DrawCircle();
+
         }
     }
 }

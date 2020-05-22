@@ -6,7 +6,7 @@ namespace VinayAG.Decorator
     {        
         internal void CreateCircle()
         {
-            // create circ logic 
+            // create circle logic 
         }
     }
 }

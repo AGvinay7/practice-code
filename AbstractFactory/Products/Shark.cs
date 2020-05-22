@@ -7,11 +7,12 @@ namespace VinayAG.AbstractFactory.Products
 {
     public class Shark : IAnimal
     {
-        public readonly static string whoAmI = "I'm the SHARK :D ";
+        private string Name;
+        public string WhoAmI { get { return Name; } set { Name = "Shark"; } }
 
         public string Create()
         {
-            return whoAmI + "Created Aqua Animal";
+            return "Created Aqua Animal i.e. - "+ WhoAmI;
         }
     }
 }

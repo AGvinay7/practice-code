@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading;
+using VinayAG.Facade.Interface;
 
 namespace VinayAG.Facade
 {
-    public class Satellite
+    public class Satellite : ISatellite
     {
 
         public void Install()

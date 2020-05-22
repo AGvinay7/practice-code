@@ -19,3 +19,6 @@ namespace VinayAG.AdapterDesignPattern.Impl
         }
     }
 }
+
+/* when there exists in incompatability between one or more classes Adapter pattern 
+   solves the incompatability and connects different classes to work with one another */

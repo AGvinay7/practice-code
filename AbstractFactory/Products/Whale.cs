@@ -7,11 +7,11 @@ namespace VinayAG.AbstractFactory.Products
 {
     public class Whale : IAnimal
     {
-        public readonly static string whoAmI = "WHALE ";
-
+        private string Name;
+        public string WhoAmI { get { return Name; } set { Name = "Whale"; } }
         public string Create()
         {
-            return whoAmI + "Created Aqua Animal";
+            return "Created Aqua Animal i.e -" + WhoAmI;
         }
     }
    

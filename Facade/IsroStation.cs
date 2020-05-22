@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VinayAG.Facade.Interface;
 
 namespace VinayAG.Facade
 {
-    public class IsroStation
+    public class IsroStation // Client who is going to interact with Facade 
     {
-        public void start()
+        private readonly IRocket _rocket;
+       public IsroStation(IRocket rocket)
         {
-            Rocket rocket = new Rocket();
-            rocket.Launch();
+            _rocket = rocket;
+        }
+        public void Start()
+        {
+            // Rocket class is a facade which handles inner mechanism
+            _rocket.Launch();
         }
     }
 }

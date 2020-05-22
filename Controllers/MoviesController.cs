@@ -12,7 +12,7 @@ namespace VinayAG.Controllers
     public class MoviesController : ControllerBase
     {
         public readonly IDesignPatterns _designPatterns;
-        //public MoviesController(IDesignPatterns designPatterns)
+        //public MoviesController(IDesignPatterns designPatterns)      // indicates Transient dependency injection
         //{
         //    _designPatterns = designPatterns;
         //}
@@ -22,7 +22,7 @@ namespace VinayAG.Controllers
         /// <returns>200</returns>
         [HttpGet]
         [Route("api/movies")]
-        public IList<MovieModel> GetAllMovies([FromServices] IDesignPatterns _designPatterns)
+        public IList<MovieModel> GetAllMovies([FromServices] IDesignPatterns _designPatterns) // [From Service] indicates scoped dependency injection
         {
             _designPatterns.DemoDesignPatterns();
             return new List<MovieModel>();

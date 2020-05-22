@@ -5,7 +5,7 @@ namespace VinayAG.AdapterDesignPattern.Impl
     {
         public double AreaOfaCircle(double radius)
         {
-            return 3.1415 * (radius * radius);
+            return 3.1415 * (radius * radius); 
         }
     }
 }

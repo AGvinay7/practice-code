@@ -2,6 +2,7 @@
 {
     public interface IAnimal
     {
+        string WhoAmI { get; set; }
         string Create();
     }
 }

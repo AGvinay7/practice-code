@@ -5,11 +5,10 @@ using VinayAG.FactoryDesignPattern;
 using VinayAG.Processors.Interface;
 using VinayAG.SingleTon;
 using VinayAG.SingleTon.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using VinayAG.Facade;
+using VinayAG.Decorator;
+using System;
+using VinayAG.Facade.Interface;
 
 namespace VinayAG.Processors.Impl
 {
@@ -17,22 +16,40 @@ namespace VinayAG.Processors.Impl
     {
         public readonly ISingletonProcessor _singletonProcessor;
         private readonly IAdapterDemo _adapterdemo;
+        private readonly ICircle _circle;
+        private readonly IRocket _rocket;
 
-        public DesignPatterns(ISingletonProcessor singletonProcessor, IAdapterDemo adapterDemo)
+        public DesignPatterns(ISingletonProcessor singletonProcessor, IAdapterDemo adapterDemo, ICircle circle, IRocket rocket)
         {
             _singletonProcessor = singletonProcessor;
             _adapterdemo = adapterDemo;
+            _circle = circle;
+            _rocket = rocket;
         }
         public void DemoDesignPatterns()
         {
-            FactoryDesignPattern();
+            //FactoryDesignPattern();
 
-            AbstractFactoryDesignPattern();
+            //AbstractFactoryDesignPattern();
 
-            _singletonProcessor.DemoSingleton();
+            //_singletonProcessor.DemoSingleton();
 
-            AdapterDesignPattern();
-           
+            //AdapterDesignPattern();
+
+            FacadeDemo();
+
+            //DecoratorMethod();
+        }       
+
+        private void DecoratorMethod()
+        {
+            new DecoratorClient(_circle).DemoDecorator();
+        }
+
+        private void FacadeDemo()
+        {
+            var clientCode = new IsroStation(_rocket); // Client calling facade
+            clientCode.Start();
         }
 
         private void AdapterDesignPattern()
@@ -43,18 +60,17 @@ namespace VinayAG.Processors.Impl
 
         private void AbstractFactoryDesignPattern()
         {
-            // creat objects using Abstract Factory Design Pattern
+            // create objects using Abstract Factory Design Pattern
             var createTiger = new AnimalMaker();
             createTiger.CreateAnimal();
         }
 
         private void FactoryDesignPattern()
         {
-            // creat objects using Factory Design Pattern
+            // create objects using Factory Design Pattern
             var callerObj = new Client();
             callerObj.GetMovies();
-        }     
+        }
 
-      
     }
 }

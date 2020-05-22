@@ -4,10 +4,11 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using VinayAG.Facade.Interface;
 
 namespace VinayAG.Facade
 {
-    public class Fuel
+    public class Fuel :IFuel
     {
         public void FillJetFuel()
         {
